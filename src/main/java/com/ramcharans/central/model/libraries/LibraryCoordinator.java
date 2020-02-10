@@ -31,14 +31,6 @@ public class LibraryCoordinator {
         }
     }
 
-    //    public void saveDocument(Document doc) throws InvalidDataLocationException {
-//        try {
-//            this.libraryMap.addEntry(doc.getId(), doc.getLocation());
-//            this.library.storeDocument(doc);
-//        } catch (Exception e) {
-//            throw new InvalidDataLocationException(e.toString());
-//        }
-//    }
     public void saveDocument(Document doc, Location loc) throws InvalidDataLocationException {
         try {
             this.libraryMap.addEntry(doc.getId(), loc);
